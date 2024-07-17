@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/accessibility.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">Michael Kim Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#info-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience-section">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="writings.html">Writings</a></li>
+                </ul>
+                <div class="navbar-nav ms-auto">
+                    <button id="theme-toggle" class="btn btn-outline-light me-2" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i> 
+                    </button>
+                    <select id="font-size" class="form-select me-2" aria-label="Select font size">
+                        <option value="small">Small</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button id="toggle-animations" class="btn btn-outline-light" aria-label="Toggle animations">
+                        <i class="fas fa-film"></i> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero-section py-5">
+            <div class="hero-content">
+                <h1>Hi, my <br>name is Michael Kim.</h1>
+                <p>
+                    I’m a <b>software engineer</b> and <b>data scientist</b> interested in helping people live happier, healthier lives through <b>bioinformatics</b>.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/Michael_Kim_Headshot.png" alt="Hero Image - Headshot" class="img-fluid">
+            </div>
+        </section>
+
+        <section id="info-section" class="info-section py-5" aria-labelledby="info-heading">
+            <div class="info-content">
+                <h2 class="header-underline" id="about-heading">About me.</h2>
+                <div class="text-block">
+                    <h3>My education</h3>
+                    <p>
+                        I’m a rising <b>fourth-year</b> undergraduate student at Northwestern University, pursuing a B.A. in Biology and Data Science and an M.S. in 
+                        Computer Science through a combined B.A./M.S. program
+                    </p>
+                </div>
+                <div class="text-block">
+                    <h3>My experiences</h3>
+                    <p>
+                        While initially exploring investment banking and venture capital internships, I found myself far more passionate in the transformative work of 
+                        startups I was actually advising and sourcing. Since then, I’ve been fortunate to build software for a multiomics research lab, a venture capital 
+                        firm, and an HR software startup. I'm eager to continue imparting meaningful impact, particularly at innovative and disruptive startups.
+                    </p>
+                </div>
+                <div class="text-block">
+                    <h3>My interests</h3>
+                    <p>
+                        While I’m not coding, I enjoy playing tennis, learning new languages, spending time outdoors with friends, playing Teamfight Tactics, and reading 
+                        books on human behavior.
+                    </p>
+                </div>
+            </div>
+            <div class="info-image">
+                <img src="assets/images/Michael_Kim_About.png" alt="Info Image - Headshot Looking Left" class="img-fluid">
+            </div>
+        </section>
+
+        <section class="project-section py-5" id="projects" aria-labelledby="projects-heading">
+            <h2 class="header-underline" id="projects-heading">About my work.</h2>
+            <p>
+                Whether it's through independent or collaborative projects, I enjoy applying new technologies to get impactful results. Over the last four years, I've 
+                worked on projects for data analysis, software development, and machine learning across multiple industries and disciplines. 
+            </p>
+            <button class="btn btn-dark mb-4" onclick="window.location.href='projects.html'" aria-label="View all projects">See all projects</button>
+            <div class="project-block row mb-4">
+                <div class="col-md-8">
+                    <h3><a href="sample_project_1.html" aria-label="View project details for Project Name 1">Proteomics Quality Control</a></h3>
+                    <p>
+                        A machine learning tool for filtering out poor quality mass spectrometry scans to improve performance and computing speeds of top-down proteoform 
+                        discovery methods. Built using tuned autoencoder neural networks, tree-based models, and supervised learning algorithms.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/Proteins1.png" alt="Protein Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="project-block row">
+                <div class="col-md-8">
+                    <h3><a href="sample_project_2.html" aria-label="View project details for Project Name 2">ICR Condition Prediction</a></h3>
+                    <p>
+                        A compilation of predictive machine learning models to determine whether patients had one of three age-related medical conditions based on various 
+                        masked health characteristics. Used tree-based models, neural networks, and ensemble models to optimize performance.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/Proteins3.png" alt="Protein Image" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience-section" class="experience-section py-5" aria-labelledby="experience-heading">
+            <h2 class="header-underline" id="experience-heading">About my experiences.</h2>
+            <p>
+                I'm passionate about learning and leveraging new technologies in fast-paced environments to drive positive change. Whether accelerating proteomics research or 
+                crafting interactive products, I've enjoyed collaborating with others to maximize the impact I can have in previous roles.
+            </p>
+            <div class="experience-block row mb-4">
+                <div class="col-md-3">
+                    <img src="assets/images/gatebio.jpeg" alt="Gate Bio Logo" class="img-fluid">
+                </div>
+                <div class="col-md-9 position-relative">
+                    <h3>Gate Bioscience</h3>
+                    <div class="experience-date">June 2024 - Present</div>
+                    <p>
+                        Gate Bioscience is a Series A preclinical biotechnology startup focused on researching and developing Molecular Gates. I am currently working as a 
+                        Data Science Intern.
+                    </p>
+                </div>
+            </div>
+            <div class="experience-block row">
+                <div class="col-md-3">
+                    <img src="assets/images/northwestern.png" alt="Northwestern University Logo" class="img-fluid">
+                </div>
+                <div class="col-md-9 position-relative">
+                    <h3>Proteomics Center of Excellence</h3>
+                    <div class="experience-date">June 2023 - Present</div>
+                    <p>
+                        The Northwestern University Proteomics Center of Excellence is a lab pioneering mass spectrometry methods in top-down proteomics. I have worked on software for 
+                        label-free quantification, proteoform discovery, and mass spectrometry tools.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="writing-section py-5" id="writings" aria-labelledby="writings-heading">
+            <h2 class="header-underline" id="writings-heading">About my writings.</h2>
+            <p>
+                I enjoy exploring and learning more about the state of various topics, including biotechnology, healthcare, startups, and technology. I try to capture the thoughts 
+                I have in some of my writings I’ve done.
+            </p>
+            <button class="btn btn-dark" onclick="window.location.href='writings.html'" aria-label="View all writings">See my writings</button>
+        </section>
+
+        <section class="image-section py-5" id="contact" aria-labelledby="contact-heading">
+            <h2 class="header-underline" id="contact-heading">Contact me.</h2>
+            <p>
+                I am currently looking for opportunities for Fall 2024 or Summer 2025. If you'd like to learn more about me or just want to chat, please reach out!
+            </p>
+            <div class="gallery-images">
+                <a href="https://github.com/mkim45" aria-label="Go to my GitHub"><img src="assets/images/github.png" alt="GitHub" class="img-fluid"></a>
+                <a href="https://www.linkedin.com/in/michael-kim-nu/" aria-label="Go to my LinkedIn"><img src="assets/images/linkedin.png" alt="LinkedIn" class="img-fluid"></a>
+                <a href="mailto:michaelkim@u.northwestern.edu" aria-label="Email me"><img src="assets/images/email.jpeg" alt="Email" class="img-fluid"></a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="home.html#info-section">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="home.html#experience-section">CV</a></li>
+                    <li><a href="writings.html">Writings</a></li>
+                </ul>
+                <div class="footer-icons">
+                    <a href="https://github.com/mkim45" aria-label="Go to my GitHub"><img src="assets/images/github.png" alt="GitHub" class="footer-icon"></a>
+                    <a href="https://www.linkedin.com/in/michael-kim-nu/" aria-label="Go to my LinkedIn"><img src="assets/images/linkedin.png" alt="LinkedIn" class="footer-icon"></a>
+                    <a href="mailto:michaelkim@u.northwestern.edu" aria-label="Email me"><img src="assets/images/email.jpeg" alt="Email" class="footer-icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/accessibility.js"></script>
+    <script src="https://kit.fontawesome.com/5e43e1e6bf.js" crossorigin="anonymous"></script>
+</body>
+</html>

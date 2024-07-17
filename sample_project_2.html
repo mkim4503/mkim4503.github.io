@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Project #2</title>
+    <link rel="stylesheet" href="assets/css/sample_project.css">
+    <link rel="stylesheet" href="assets/css/accessibility.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Michael Kim Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#info-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#experience-section">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="writings.html">Writings</a></li>
+                </ul>
+                <div class="navbar-nav ms-auto">
+                    <button id="theme-toggle" class="btn btn-outline-light me-2" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i> 
+                    </button>
+                    <select id="font-size" class="form-select me-2" aria-label="Select font size">
+                        <option value="small">Small</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button id="toggle-animations" class="btn btn-outline-light" aria-label="Toggle animations">
+                        <i class="fas fa-film"></i> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="py-5">
+            <h1 class="header-underline">ICR Condition Prediction.</h1>
+            <a href="https://github.com/mkim45/ICR-Age"><img src="assets/images/github.png" alt="GitHub Icon" class="header-icon"></a>
+        </header>
+
+        <main>
+            <section class="row mb-4">
+                <div class="col-md-9">
+                    <h2>Project background</h2>
+                    <p>
+                        Using data from a Kaggle competition and InVitro Cell Research (ICR), I built predictive machine learning models to determine the 
+                        probability that a patient had one of three age-related medical conditions based on various health characteristics data. Given the 
+                        current literature connecting age with a number of complications (from heart disease to dementia), bioinformatics and data science 
+                        can be utilized to intervene earlier if models are able to accurately detect where medical conditions may arise.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/Proteins3.png" alt="Proteins Image" class="img-fluid">
+                </div>
+            </section>
+            <section class="row mb-4">
+                <div class="col-md-9">
+                    <h2>About the project</h2>
+                    <p>
+                        I used Python and various libraries to initially do exploratory data analysis on 50+ masked health conditions and the binary response 
+                        variable (presence of age-related health condition or not in patient). Afterwards, I imputed missing values after substantial testing 
+                        of performance on base models after different imputation methods. I tested the performance of XGBoost, Random Forest, Decision Tree 
+                        Classifiers, TabPFN, CatBoost, LightGBM, AdaBoost, and Gradient Boosting Classifiers individually and ensembled using both stacking and 
+                        voting. Optuna trials and cross-validated metrics were used to find ideal hyperparameter values, in addition to different regularization 
+                        parameters to adjust for overfitting and visualizations of model shortcomings in predicting probabilities of response above or below certain 
+                        thresholds.
+                    </p>
+                </div>
+            </section>
+            <section class="row mb-4">
+                <div class="col-md-9">
+                    <h2>Technologies used</h2>
+                    <p>
+                        Python (Pandas, NumPy, Matplotlib, Optuna, Scikit-learn, Seaborn, Statsmodels)
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="index.html#info-section">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#experience-section">CV</a></li>
+                    <li><a href="writings.html">Writings</a></li>
+                </ul>
+                <div class="footer-icons">
+                    <a href="https://github.com/mkim45"><img src="assets/images/github.png" alt="GitHub" class="footer-icon"></a>
+                    <a href="https://www.linkedin.com/in/michael-kim-nu/"><img src="assets/images/linkedin.png" alt="LinkedIn" class="footer-icon"></a>
+                    <a href="mailto:michaelkim@u.northwestern.edu"><img src="assets/images/email.jpeg" alt="Email" class="footer-icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/accessibility.js"></script>
+    <script src="https://kit.fontawesome.com/5e43e1e6bf.js" crossorigin="anonymous"></script>
+</body>
+</html>

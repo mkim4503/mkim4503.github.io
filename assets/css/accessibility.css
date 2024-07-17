@@ -1,0 +1,62 @@
+.controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+  background-color: #1b1b1b !important;
+}
+
+body.dark-mode footer {
+  background-color: #1b1b1b !important;
+}
+
+body.dark-mode .navbar-collapse {
+  background-color: #1b1b1b !important;
+}
+
+body.dark-mode .project-block,
+body.dark-mode .experience-block,
+body.dark-mode button {
+  background-color: #333;
+}
+
+body.dark-mode a {
+  color: #fff;
+}
+
+body.font-small {
+  font-size: 14px;
+}
+
+body.font-medium {
+  font-size: 16px;
+}
+
+body.font-large {
+  font-size: 18px;
+}
+
+:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+      transition: none !important;
+      animation: none !important;
+  }
+}
+
+body.reduce-motion * {
+  transition: none !important;
+  animation: none !important;
+}

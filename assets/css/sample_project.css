@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 60px 0 0 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-underline {
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.header-icon {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .writing-block {
+        text-align: center;
+    }
+
+    .writing-block img {
+        margin-top: 1rem;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 60px;
+    padding: 10px 60px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.logo a, .nav-links a {
+    color: white;
+}
+
+.nav-links a {
+    font-size: 1.2em;
+}
+
+.navbar-collapse {
+    background-color: #222529;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-links li {
+        margin: 0 10px 10px;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.collapse {
+    margin-top: 0;
+}
+
+.navbar-dark {
+    --bs-navbar-color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-nav .dropdown-menu {
+    background-color: #343a40;
+}
+
+.navbar-dark .navbar-nav .dropdown-item {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .dropdown-item:hover,
+.navbar-dark .navbar-nav .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.navbar .btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar .btn-outline-light:hover,
+.navbar .btn-outline-light:focus {
+    color: #333;
+    background-color: #fff;
+}
+
+.navbar #font-size {
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar #font-size option {
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-nav .btn {
+    width: 150px; 
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+
+    .navbar .btn-outline-light,
+    .navbar #font-size {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-links {
+        font-size: 0.8rem;
+    }
+}
+
+@media print {
+    .navbar, footer {
+        display: none;
+    }
+}
