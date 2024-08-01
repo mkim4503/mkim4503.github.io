@@ -1,3 +1,2 @@
-# COMP-SCI-396 Lab 4
+# COMP-SCI-396 Lab 7
 
-For Lab 4, I filled in all information, images, and links to make my website and webpages complete. For the interactive features, the first one I chose to implement was the dark/light mode toggle. All webpages will start by being in light mode. A user can then click on the moon/sun button in the navigation bar to toggle to light/dark mode, changing the color of the text and the backgrounds accordingly. Additionally, the second interactive feature I implemented was for changing the font size of text to one of three options (small, medium, or large). This is a dropdown menu in the navigation bar that will change the text on the screen accordingly to one of these three relative sizes (starts off as medium). A third button in the navigation bar is to pause any automatic animations.
